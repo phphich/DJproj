@@ -1,0 +1,70 @@
+
+{% load static %}
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+    <link type="text/css" rel="stylesheet"
+        href="{% static 'stylesheets/bt523/css/bootstrap.css' %}" >
+    <script src="{% static 'stylesheets/bt523/js/bootstrap.bundle.js' %}"></script>
+
+    <h1>Hello {{ Name }}</h1> <br>
+    <h1 class="bg-warnning text-Primary text-center">Welcome to Winter</h1>
+    <h2 class="bg-info text-danger text-center">
+        Merry Christmas and Happy New Year 2023
+    </h2> <br>
+    <p class="text-center">
+        <hr width="50%" class="text-danger"  size="5">
+    </p>
+    <br>
+    <p class="bg-secondary text-warning text-center">
+        <img src="{% static 'images/philo1.png' %}"
+        class="rounded-circle" width="150px" height="150px"> <br>
+        <i>ถ้าเราเชื่อมั่นว่าทำได้ ต่อให้ต้องย้ายภูเขาถมทะเล <br>
+        ในที่สุดก็สำเร็จจนได้ แต่ถ้าใจเราคิดว่าทำไม่ได้ <br>
+        แม้จะง่ายแค่พลิกฝ่ามือ ก็ยังไม่มีวันประสบความสำเร็จ <br></i>
+        <b>- ด.ร.ซุนยัดเซ็น -</b>
+    </p> <br>
+    <p class="bg-success text-white text-center">
+        <img src="{% static 'images/philo2.png' %}"
+        class="rounded-circle" width="150px" height="150px"><br>
+        <i>"ความสำเร็จ" คือผลรวมของความพยายามเล็กๆ <br>
+            ที่เกิดขึ้นซ้ำๆเป็นประจำทุกวัน <br> </i>
+        <b>- Robert Collier - American author </b><br>
+    </p>
+    <br>
+
+        <ul class="list-group">
+            <li class="list-group-item-primary">สิ่งที่สนใจ:</li>
+            <li class="list-group-item">Game</li>
+            <li class="list-group-item">Movie</li>
+            <li class="list-group-item">Song</li>
+            <li class="list-group-item">Sleeping</li>
+            <li class="list-group-item">Eating</li>
+        </ul> <br>
+
+        <ol type="A" class="list-group">
+            <li class="list-group-item-warning">Favorites web site:</li>
+            <li class="list-group-item"><a href="http://facebook.com" target="_blank">facebook.com </a> </li>
+            <li class="list-group-item"><a href="http://www.pythonanywhere.com" target="_blank">pythonanywhere.com </a></li>
+            <li class="list-group-item"><a href="http://www.geeksforgeeks.org" target="_blank">geeksforgeeks.org</a></li>
+            <li class="list-group-item"><a href="http://www.w3schools.com" target="_blank">w3schools.com</a></li>
+            <li class="list-group-item"><a href="http://www.github.com" target="_blank">github.com </a> </li>
+            <li class="list-group-item">
+                <a href="http://www.google.com" target="_blank">
+                    <img src="{% static 'images/google.png' %}" width="100px" height="55px">
+                </a>
+            </li>
+        </ol>
+
+    <br>
+    <p class="text-center">
+        <a href="/firstpage" class="btn btn-success">First page</a>
+         </p>
+    <br><br><br><br>
+
+    </body>
+</html>
+
+
